@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Automotriz El Kashy</title>
+    <style>
+        :root {
+            --primary-red: #e60000;
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #ffffff;
+            --text-muted: #b0b0b0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid #333;
+        }
+        .header-img {
+            width: 100%;
+            height: auto;
+            max-height: 280px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--primary-red);
+        }
+        .content {
+            padding: 24px;
+        }
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            color: #fff;
+        }
+        .slogan {
+            font-size: 1rem;
+            color: var(--primary-red);
+            font-style: italic;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        .description {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        .services-list {
+            text-align: left;
+            background: #252525;
+            padding: 16px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        .services-list h3 {
+            color: #fff;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        .services-list ul {
+            padding-left: 20px;
+        }
+        .services-list li {
+            margin-bottom: 4px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: opacity 0.2s ease, transform 0.1s ease;
+        }
+        .btn:active {
+            transform: scale(0.98);
+        }
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: #fff;
+        }
+        .btn-facebook {
+            background-color: #1877F2;
+            color: #fff;
+        }
+        .footer {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Llamado al logo alojado en la carpeta assets/img -->
+        <img src="assets/img/logo-el-kashy.jpg" alt="Taller Automotriz El Kashy Logo" class="header-img">
+        
+        <div class="content">
+            <h1>Taller Automotriz El Kashy</h1>
+            <p class="slogan">"Tu auto en las mejores manos"</p>
+            
+            <p class="description">
+                Especialistas en mantenimiento preventivo y correctivo. Brindamos soluciones confiables, precisas y profesionales para tu vehículo.
+            </p>
+
+            <div class="services-list">
+                <h3>Servicios Principales:</h3>
+                <ul>
+                    <li>Cambio de Aceite y Filtros</li>
+                    <li>Sistema de Frenos</li>
+                    <li>Mecánica General</li>
+                    <li>Sistema Eléctrico</li>
+                </ul>
+            </div>
+
+            <!-- Botón de WhatsApp con el enlace configurado -->
+            <a href="https://wa.me/50379272813?text=Hola,%20necesito%20consultar%20por%20un%20servicio%20para%20mi%20vehículo" class="btn btn-whatsapp" target="_blank">
+                📱 Escribir por WhatsApp
+            </a>
+
+            <!-- Botón de Facebook con el enlace del perfil del cliente -->
+            <a href="https://www.facebook.com/share/1J5GvH6HDn/" class="btn btn-facebook" target="_blank">
+                📘 Visítanos en Facebook
+            </a>
+
+            <div class="footer">
+                San Miguel, El Salvador
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
